@@ -1,417 +1,90 @@
-@import url('https://fonts.googleapis.com/css2?family=Champ:wght@400;700&family=Inter:wght@400;700&display=swap');
-
-#frm-showUserForm {
-	font-family: Arial, Helvetica, sans-serif;
-	line-height: 1em;
+/* General container styling */
+.fapi-form-container {
+    background-color: #ffeb3b; /* Bright yellow background for visibility */
+    padding: 30px;
+    border: 5px solid #ff5722; /* Bold orange border */
+    border-radius: 15px;
+    font-family: 'Arial', sans-serif;
 }
 
-#frm-showUserForm .form_container {
-	border: 1px solid #aaa;
-	font-size: 15px;
-	font-weight: bold;
-	color: #555;
-	margin-top: 20px;
+/* Styling for input fields */
+.fapi-form-container input,
+.fapi-form-container select,
+.fapi-form-container textarea {
+    background-color: #ffffff; /* White background for inputs */
+    border: 2px solid #673ab7; /* Purple border for input fields */
+    color: #000000; /* Black text color */
+    font-size: 18px; /* Increase font size */
+    padding: 15px; /* Larger padding for input fields */
+    margin: 15px 0; /* Increase margin for space between fields */
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 8px;
 }
 
-#frm-showUserForm .form_container_first {
-	margin-top: 0px;
+/* Styling for labels */
+.fapi-form-container label {
+    color: #2196f3; /* Bright blue for labels */
+    font-size: 20px; /* Larger font size for labels */
+    font-weight: bold; /* Bold text for emphasis */
+    margin-bottom: 10px;
+    display: block;
 }
 
-.fapi-form-error {
-	color: #000;
-	background: #FFF9D7;
-	border: 1px solid #E2C822;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
-	padding: 15px;
-	margin: 30px 0;
-	font-size: 15px;
+/* Styling for buttons */
+.fapi-form-container button {
+    background-color: #4caf50; /* Bright green background */
+    color: white; /* White text */
+    padding: 15px 25px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px; /* Larger font size for buttons */
+    font-weight: bold;
+    transition: background-color 0.3s ease;
 }
 
-#frm-showUserForm table {
-	margin: 10px auto;
-	border: 0px;
-	table-layout: auto;
+.fapi-form-container button:hover {
+    background-color: #388e3c; /* Darker green on hover */
 }
 
-#frm-showUserForm .form_container_title {
-	background: #ddd;
-	padding: 0.5em 10px;
+/* Styling for error messages */
+.fapi-form-container .error {
+    color: #f44336; /* Bright red for errors */
+    background-color: #ffebee; /* Light red background */
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    border: 2px solid #d32f2f; /* Dark red border */
 }
 
-#frm-showUserForm td, #frm-showUserForm th {
-	border: 0;
-	padding: 5px;
-	color: #555;
+/* Styling for success messages */
+.fapi-form-container .success {
+    color: #4caf50; /* Bright green for success */
+    background-color: #e8f5e9; /* Light green background */
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    border: 2px solid #388e3c; /* Dark green border */
 }
 
-#frm-showUserForm th {
-	text-align: right;
+/* Styling for form titles */
+.fapi-form-container h1,
+.fapi-form-container h2,
+.fapi-form-container h3 {
+    color: #e91e63; /* Bright pink for titles */
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
 }
 
-.fapi-form-personal-information th {
-	text-align: right;
+/* Adjusting link colors */
+.fapi-form-container a {
+    color: #3f51b5; /* Blue for links */
+    text-decoration: none;
+    font-weight: bold;
 }
 
-#frm-showUserForm td.form_container_description {
-	padding-top: 0px;
-	font-size: 11px;
-}
-
-#frm-showUserForm input[type=text], #frm-showUserForm input[type=email], #frm-showUserForm input[type=number] {
-	display: inline;
-	border-radius: 0px;
-	height: 25px;
-	padding: 3px;
-	-webkit-box-sizing: content-box;
-	-moz-box-sizing: content-box;
-	-ms-box-sizing: content-box;
-	-o-box-sizing: content-box;
-	box-sizing: content-box;
-}
-
-#frm-showUserForm input[type=number].number, #frm-showUserForm input[type=text].number {
-	width: 30px;
-	height: 14px;
-	border-radius: 0px;
-	text-align: right;
-}
-
-#frm-showUserForm .payment-image {
-	max-height: 20px;
-	max-width: 100px;
-	vertical-align: text-bottom;
-}
-
-#frm-showUserForm .payment-image-wrapper {
-	margin-left: 10px;
-	display: inline-block;
-}
-
-#frm-showUserForm .payment-image-wrapper img {
-	margin: 0;
-	padding: 0;
-}
-
-#frm-showUserForm input[name=shippingAddressBox] {
-	margin-left: 7px;
-}
-
-#frm-showUserForm input[type=checkbox] {
-	margin-right: 6px;
-	-webkit-appearance: checkbox;
-	-moz-appearance: checkbox;
-}
-
-#frm-showUserForm input[type=radio] {
-	margin-right: 6px;
-	-webkit-appearance: radio;
-	-moz-appearance: radio;
-}
-
-#frm-showUserForm label, #frm-showUserForm span.fapi-form-label {
-	display: inline;
-	font-size: 13px;
-	margin-right: 2px;
-	text-transform: none;
-	font-weight: bold;
-}
-
-#frm-showUserForm .fapi-form-sold-out {
-	text-decoration: line-through;
-	color: #888;
-}
-
-#frm-showUserForm .fapi-form-sold-out-legend {
-	margin-left: 5px;
-	font-variant: small-caps;
-}
-
-#frm-showUserForm .form-discount-code-message {
-	display: inline;
-	font-size: 13px;
-	margin-right: 2px;
-	text-transform: none;
-	font-weight: bold;
-}
-
-#frm-showUserForm select {
-	display: inline;
-	border-radius: 0px;
-	background: none repeat scroll 0 0 #EFEFEF;
-	border: 1px solid #CCCCCC;
-	height: 25px;
-	margin-top: 1px;
-	padding: 3px;
-	-webkit-box-sizing: content-box;
-	-moz-box-sizing: content-box;
-	-ms-box-sizing: content-box;
-	-o-box-sizing: content-box;
-	box-sizing: content-box;
-}
-
-#frm-showUserForm textarea {
-	display: inline;
-	border-radius: 0px;
-	border: 1px solid #CCCCCC;
-	border-radius: 0px;
-	background: #efefef;
-	background: none repeat scroll 0 0 #EFEFEF;
-	padding: 3px;
-	-webkit-box-sizing: content-box;
-	-moz-box-sizing: content-box;
-	-ms-box-sizing: content-box;
-	-o-box-sizing: content-box;
-	box-sizing: content-box;
-}
-
-#ship, #bank {
-	display: none;
-}
-
-#fapi-form-footer {
-	margin-top: 5px;
-	text-align: center;
-	font-size: 10px;
-	color: #b8b7b7;
-}
-
-#fapi-form-footer a {
-	color: #b8b7b7;
-}
-
-.fapi-form-only-czk, .fapi-form-only-eur {
-	display: none;
-}
-
-.fapi-form-total {
-	display: none;
-}
-
-.fapi-form-total table {
-	font-size: 13px;
-}
-
-.fapi-form-total th {
-	font-weight: bold;
-}
-
-.fapi-form-warn {
-	border: 1px solid #e9c1c1;
-	border-radius: 6px;
-	padding: 10px;
-	background: #fde9e9;
-	color: #bc251b;
-	margin-bottom: 15px;
-	font-weight: bold;
-	font-size: 13px;
-	line-height: 1.3;
-}
-
-#frm-showUserForm .fapi-form-loading {
-	background: url("../images/ajax_loader.gif") no-repeat bottom;
-	padding-bottom: 32px;
-}
-
-#frm-showUserForm label span.description {
-	display: block;
-	font-weight: normal;
-	color: #666;
-	padding-left: 22px;
-	padding-top: 5px;
-	line-height: 1em;
-}
-
-#frm-showUserForm input[type=submit] {
-	width: auto;
-	font-size: 20px;
-	padding: 0.5em;
-	margin: 20px auto;
-	border: 1px solid #aaa;
-	display: block;
-}
-
-#frm-showUserForm input[type=submit].fapi-custom-button-0 {
-	background: linear-gradient(to bottom, #ffd325 0%, #fcbe00 100%) no-repeat border-box;
-	background: -moz-linear-gradient(top, #ffd325, #fcbe00) no-repeat border-box;
-	background: -webkit-gradient(linear, left top, left bottom, from(#ffd325), to(#fcbe00)) no-repeat border-box;
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffd325', endColorstr='#fcbe00');
-	color: #000000;
-	font-size: 20px;
-	padding: 0.5em 1.2em;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-	border: none;
-	line-height: 1;
-	box-shadow: inset 1px 1px 2px rgba(255, 255, 255, 0.4);
-	-webkit-box-shadow: inset 1px 1px 2px rgba(255, 255, 255, 0.4);
-	-moz-box-shadow: inset 1px 1px 2px rgba(255, 255, 255, 0.4);
-	border: 1px solid rgba(0, 0, 0, 0.2);
-}
-
-#frm-showUserForm input[type=submit].fapi-custom-button:hover {
-	opacity: 0.85;
-}
-
-#frm-showUserForm input[type=submit].fapi-custom-button-0.fapi-old-style {
-	background: #efefef;
-	filter: none;
-	color: #000000;
-	font-size: 13px;
-	padding: 3px;
-	border: 1px solid #aaa;
-	line-height: normal;
-	box-shadow: none;
-	-webkit-box-shadow: none;
-	-moz-box-shadow: none;
-}
-
-#frm-showUserForm input[type=submit].fapi-custom-button-0.fapi-old-style:hover {
-	background: #ccc;
-}
-
-#frm-showUserForm input[type=submit].fapi-custom-button {
-	padding: 0.5em 1.2em;
-
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-
-	border: none;
-	line-height: 1;
-}
-
-#frm-showUserForm input[type=submit].fapi-custom-button-1 {
-	box-shadow: inset 1px 1px 2px rgba(255, 255, 255, 0.4);
-	-webkit-box-shadow: inset 1px 1px 2px rgba(255, 255, 255, 0.4);
-	-moz-box-shadow: inset 1px 1px 2px rgba(255, 255, 255, 0.4);
-	border: 1px solid rgba(0, 0, 0, 0.2);
-}
-
-#frm-showUserForm input[type=submit].fapi-custom-button-2 {
-	-moz-box-shadow: 0px 10px 14px -7px rgba(0, 0, 0, 0.3);
-	-webkit-box-shadow: 0px 10px 14px -7px rgba(0, 0, 0, 0.3);
-	box-shadow: 0px 10px 14px -7px rgba(0, 0, 0, 0.3);
-}
-
-#frm-showUserForm input[type=submit].fapi-custom-button-3 {
-	-moz-box-shadow: inset 0 0 0.8em 0 rgba(0, 0, 0, 0.3);
-	-webkit-box-shadow: inset 0 0 0.8em 0 rgba(0, 0, 0, 0.3);
-	box-shadow: inset 0 0 0.8em 0 rgba(0, 0, 0, 0.3);
-	border: 1px solid rgba(0, 0, 0, 0.25);
-}
-
-#frm-showUserForm input[type=submit].fapi-custom-button-4 {
-	-moz-box-shadow: 0.04em 0.06em 0.12em 0 rgba(0, 0, 0, 0.3);
-	-webkit-box-shadow: 0.04em 0.06em 0.12em 0 rgba(0, 0, 0, 0.3);
-	box-shadow: 0.04em 0.06em 0.12em 0 rgba(0, 0, 0, 0.3);
-}
-
-#frm-showUserForm .fapi-form-payment-method-option {
-	padding-top: 0;
-	margin-bottom: 15px;
-}
-
-#frm-showUserForm .fapi-form-payment-method-option.fapi-form-first {
-	margin-top: 0;
-}
-
-#frm-showUserForm .fapi-form-payment-method-option label {
-	display: block;
-}
-
-#frm-showUserForm .fapi-form-payment-method-option .payment-method-name {
-	font-weight: normal;
-}
-
-#frm-showUserForm .fapi-form-payment-method-option .fapi-form-icons {
-	display: block;
-	margin-top: 2px;
-	padding-left: 22px;
-}
-
-#frm-showUserForm .fapi-text-success {
-	color: #5bb75b;
-}
-
-#frm-showUserForm .fapi-text-danger {
-	color: #bd362f;
-}
-
-#frm-showUserForm .fapi-form-discount-code input[type=text] {
-	width: 50%;
-}
-
-#frm-showUserForm #frm-state {
-	color: #555;
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 1em;
-}
-
-#frm-showUserForm .fapi-form-discount-code input[type=button] {
-	display: inline;
-	margin-left: 10px;
-	padding: 3px 12px;
-	height: 25px;
-	color: #555;
-	background-color: #e6e6e6;
-	font-size: 13px;
-	text-align: center;
-	vertical-align: middle;
-	font-family: Arial, Helvetica, sans-serif;
-	line-height: 1em;
-	text-transform: none;
-	font-weight: normal;
-	text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
-	background-image: -moz-linear-gradient(top, #fff, #e6e6e6);
-	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fff), to(#e6e6e6));
-	background-image: -webkit-linear-gradient(top, #fff, #e6e6e6);
-	background-image: -o-linear-gradient(top, #fff, #e6e6e6);
-	background-image: linear-gradient(to bottom, #fff, #e6e6e6);
-	background-repeat: repeat-x;
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe6e6e6', GradientType=0);
-	border-color: #e6e6e6 #e6e6e6 #bfbfbf;
-	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-	border: 1px solid #ccc;
-	border-bottom-color: #b3b3b3;
-	-webkit-border-radius: 4px;
-	-moz-border-radius: 4px;
-	border-radius: 4px;
-	-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .2), 0 1px 2px rgba(0, 0, 0, .05);
-	-moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .2), 0 1px 2px rgba(0, 0, 0, .05);
-	box-shadow: inset 0 1px 0 rgba(255, 255, 255, .2), 0 1px 2px rgba(0, 0, 0, .05);
-	-webkit-box-sizing: content-box;
-	-moz-box-sizing: content-box;
-	-ms-box-sizing: content-box;
-	-o-box-sizing: content-box;
-	box-sizing: content-box;
-}
-
-#frm-showUserForm .fapi-form-discount-code input[type=button]:hover {
-	border: 1px solid #aaa;
-}
-
-#frm-showUserForm .fapi-terms {
-	font-size: 13px;
-	font-weight: normal;
-}
-
-#frm-showUserForm .fapi-form-purpose {
-	font-size: 13px;
-	font-weight: normal;
-}
-
-#frm-showUserForm .pay-method-header {
-	margin-left: 0px;
-	font-size: 13px;
-	text-transform: none;
-	font-weight: bold;
-	padding-top: 5px;
-	padding-bottom: 3px;
-}
-
-#frm-showUserForm .tooltip-fapi {
-	margin-left: 10px;
+.fapi-form-container a:hover {
+    text-decoration: underline;
 }
