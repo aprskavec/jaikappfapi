@@ -14,7 +14,7 @@
     --submit-button-text-color: #000;
     --submit-button-background-color: #ffdc00;
     --submit-button-font-family: inherit;
-    --input-color: #000;
+    --input-color: #ffdc00;
     --input-color-disabled: #e5e7eb;
     --sale-color: #ff1901;
     --checkbox-color-default: #fff;
@@ -103,3 +103,5 @@
     color: var(--order-bump-container-header-color);
     font-weight: 700;
 }
+
+
