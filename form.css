@@ -67,7 +67,7 @@
 .fapi-order-form form button {
     background-color: var(--submit-button-background-color);
     color: var(--submit-button-text-color);
-    font-weight: 400;
+    font-weight: 600;
     padding: 10px 20px;
     border-radius: var(--submit-button-border-radius);
     transition: opacity 0.15s ease-in-out;
@@ -75,6 +75,12 @@
     font-size: var(--submit-button-font-size);
     border: none;
 }
+
+.f--ml-px.f-relative.f-inline-flex.f-items-center.f-px-2.f-py-1.f-border.f-border-gray-300.f-text-sm.f-rounded-r-md.f-text-white.f-bg-blue-500:hover.f-bg-blue-600:focus.f-outline-none:focus.f-ring-1:focus.f-ring-blue-500:focus.f-border-blue-500 {
+    background-color: #ff0000; /* Red background */
+    color: #ffffff; /* White text */
+}
+
 
 .fapi-order-form form button:hover {
     opacity: 0.85;
