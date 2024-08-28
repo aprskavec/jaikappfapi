@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
 .fapi-order-form {
-    --background-color: #fff; /* Keep the form background white */
+    --background-color: #000; /* Background color changed to black */
     --font-size: 16px;
-    --color: #000; /* Default text color set to black */
+    --color: #ffdc00; /* Text color changed to #ffdc00 */
     --font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    --container-header-background-color: #000; /* Section header background in black */
+    --container-header-background-color: #000; /* Container header background changed to black */
     --container-header-font-size: 18px;
-    --container-header-color: #ffdc00; /* Section header text in #ffdc00 */
+    --container-header-color: #ffdc00; /* Container header text color changed to #ffdc00 */
     --container-header-font-family: inherit;
     --submit-button-font-size: 20px;
     --submit-button-border-radius: 20px;
@@ -18,9 +18,9 @@
     --input-color-disabled: #e5e7eb;
     --sale-color: #ff1901;
     --checkbox-color-default: #fff;
-    --order-bump-container-header-background-color: #000; /* Order bump header background in black */
+    --order-bump-container-header-background-color: #000; /* Order bump header background changed to black */
     --order-bump-container-header-font-size: 16px;
-    --order-bump-container-header-color: #ffdc00; /* Order bump header text in #ffdc00 */
+    --order-bump-container-header-color: #ffdc00; /* Order bump header text color changed to #ffdc00 */
     --order-bump-container-content-background-color: transparent;
     --order-bump-container-content-item-background-color: transparent;
     --order-bump-container-border-width: 3px;
@@ -37,25 +37,17 @@
     line-height: 1.5em;
     font-family: var(--font-family);
     color: var(--color);
-    background-color: var(--background-color); /* White background for the form */
+    background-color: var(--background-color);
     border: none;
     padding: 20px; /* Adjusted padding for compactness */
 }
 
-/* Apply black background to section headers */
 .fapi-order-form .fapi-container-header {
-    background-color: #000 !important;
+    background-color: var(--container-header-background-color);
     font-size: var(--container-header-font-size);
-    color: #ffdc00 !important; /* Text color in #ffdc00 */
+    color: var(--container-header-color);
     font-family: var(--container-header-font-family);
     font-weight: 700;
-}
-
-/* Remove solid border from all elements */
-.fapi-order-form *, 
-.fapi-order-form :after, 
-.fapi-order-form :before {
-    border: none !important;
 }
 
 .fapi-order-form form input, 
@@ -73,8 +65,8 @@
 }
 
 .fapi-order-form form button {
-    background-color: #ffdc00 !important; /* Button background color in #ffdc00 */
-    color: #000 !important; /* Button text color in black */
+    background-color: var(--submit-button-background-color);
+    color: var(--submit-button-text-color);
     font-weight: 700;
     padding: 10px 20px;
     border-radius: var(--submit-button-border-radius);
@@ -90,7 +82,7 @@
 
 .fapi-order-form form label {
     font-weight: 600;
-    color: #ffdc00 !important; /* Label color in #ffdc00 */
+    color: #ffdc00; /* Label color changed to #ffdc00 */
     font-family: var(--font-family);
 }
 
@@ -100,8 +92,8 @@
 }
 
 .fapi-order-form .order-bump {
-    background-color: #000 !important; /* Black background for order bump header */
+    background-color: var(--order-bump-container-header-background-color);
     font-size: var(--order-bump-container-header-font-size);
-    color: #ffdc00 !important; /* Order bump header text in #ffdc00 */
+    color: var(--order-bump-container-header-color);
     font-weight: 700;
 }
