@@ -55,7 +55,7 @@
 .fapi-order-form .fapi-container-header {
     background-color: black;
     font-size: var(--container-header-font-size);
-    color: #ffdc00
+    color: #ffdc00;
     font-family: var(--container-header-font-family);
     font-weight: 700;
 }
