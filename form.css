@@ -14,7 +14,7 @@
     --submit-button-text-color: #000;
     --submit-button-background-color: #fcbe00;
     --submit-button-font-family: inherit;
-    --input-color: #2563eb;
+    --input-color: #2563eb; /* Editable blue color */
     --input-color-disabled: #e5e7eb;
     --sale-color: #ff1901;
     --checkbox-color-default: #fff;
@@ -32,6 +32,9 @@
     --order-bump-space-padding: 14px 24px;
     --font-smoothing: antialiased;
     --line-height: 1.5em;
+    --focus-ring-color: #2563eb; /* Editable focus ring color */
+    --button-hover-bg-color: #1e40af; /* Editable button hover blue */
+    --checkbox-radio-focus-ring-color: #2563eb; /* Editable checkbox/radio focus ring blue */
 
     margin-left: auto;
     margin-right: auto;
@@ -44,17 +47,13 @@
     background-color: var(--background-color);
     -webkit-font-smoothing: var(--font-smoothing);
     -moz-osx-font-smoothing: grayscale;
+    tab-size: 4;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
 }
 
-.fapi-order-form .fapi-container-header {
-    background-color: var(--container-header-background-color);
-    color: var(--container-header-color);
-    font-size: var(--container-header-font-size);
-    font-family: var(--container-header-font-family);
-}
-
-.fapi-order-form form input, 
-.fapi-order-form form select, 
+.fapi-order-form form input,
+.fapi-order-form form select,
 .fapi-order-form form textarea {
     background-color: #fff;
     border-color: #000;
@@ -65,6 +64,13 @@
     font-weight: 600;
     color: #000;
     border-radius: 4px;
+}
+
+.fapi-order-form form input:focus,
+.fapi-order-form form select:focus,
+.fapi-order-form form textarea:focus {
+    --tw-ring-color: var(--focus-ring-color); /* Use the editable focus ring color */
+    border-color: var(--focus-ring-color);
 }
 
 .fapi-order-form form button {
@@ -79,27 +85,25 @@
     border: none;
 }
 
-.fapi-order-form form input:focus, 
-.fapi-order-form form select:focus, 
-.fapi-order-form form textarea:focus {
-    --tw-ring-color: var(--input-color);
-    border-color: var(--input-color);
+.fapi-order-form form button:hover {
+    background-color: var(--button-hover-bg-color); /* Use the editable button hover blue */
+    opacity: 0.85;
 }
 
-.fapi-order-form form input[type=checkbox], 
+.fapi-order-form form input[type=checkbox],
 .fapi-order-form form input[type=radio] {
     height: 16px;
     width: 16px;
-    color: var(--input-color);
+    color: var(--input-color); /* Use the editable blue color */
     border-radius: 9999px;
 }
 
-.fapi-order-form form input[type=checkbox]:focus, 
+.fapi-order-form form input[type=checkbox]:focus,
 .fapi-order-form form input[type=radio]:focus {
-    --tw-ring-color: var(--input-color);
+    --tw-ring-color: var(--checkbox-radio-focus-ring-color); /* Use the editable checkbox/radio focus ring blue */
 }
 
-.fapi-order-form form .fapi-form-discounted-price {
+.fapi-order-form .fapi-form-discounted-price {
     color: var(--sale-color);
     font-weight: 700;
 }
@@ -184,7 +188,7 @@
     color: var(--color);
 }
 
-.fapi-order-form form ol, 
+.fapi-order-form form ol,
 .fapi-order-form form ul {
     margin: 0;
     list-style-type: none;
