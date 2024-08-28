@@ -42,10 +42,6 @@
     padding: 20px; /* Adjusted padding for compactness */
 }
 
-.fapi-order-form *:not(:before):not(:after) {
-    border: none;
-}
-
 .fapi-order-form .fapi-container-header {
     background-color: var(--container-header-color);
     color: var(--container-header-background-color);
