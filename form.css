@@ -67,7 +67,7 @@
 .fapi-order-form form button {
     background-color: var(--submit-button-background-color);
     color: var(--submit-button-text-color);
-    font-weight: 700;
+    font-weight: 400;
     padding: 10px 20px;
     border-radius: var(--submit-button-border-radius);
     transition: opacity 0.15s ease-in-out;
