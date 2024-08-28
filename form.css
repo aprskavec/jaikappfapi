@@ -1,223 +1,228 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
-
-.fapi-order-form {
-    --background-color: #fff;
-    --font-size: 16px;
-    --color: #000; /* Ensure black text */
-    --font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    --container-header-background-color: #ffdc00; /* Yellow header background */
-    --container-header-font-size: 18px;
-    --container-header-color: #000; /* Ensure black text */
-    --container-header-font-family: inherit;
-    --submit-button-font-size: 20px;
-    --submit-button-border-radius: 20px;
-    --submit-button-text-color: #000; /* Ensure black text */
-    --submit-button-background-color: #ffdc00; /* Yellow button background */
-    --submit-button-font-family: inherit;
-    --input-color: #2563eb; /* Editable blue color */
-    --input-color-disabled: #e5e7eb;
-    --sale-color: #ff1901; /* Sale red color */
-    --checkbox-color-default: #fff; /* White checkbox background */
-    --order-bump-container-header-background-color: #ffdc00; /* Yellow order bump background */
-    --order-bump-container-header-font-size: 16px;
-    --order-bump-container-header-color: #000; /* Ensure black text */
-    --order-bump-container-content-background-color: transparent;
-    --order-bump-container-content-item-background-color: transparent;
-    --order-bump-container-border-width: 3px;
-    --order-bump-container-border-style: dashed;
-    --order-bump-border-style: var(--order-bump-container-border-width) var(--order-bump-container-border-style) var(--order-bump-container-header-background-color) !important;
-    --order-bump-item-arrow-display: inherit;
-    --order-bump-item-arrow-color: #ffdc00; /* Yellow arrow color */
-    --order-bump-space-margin: 10px 0 10px;
-    --order-bump-space-padding: 14px 24px;
-    --font-smoothing: antialiased;
-    --line-height: 1.5em;
-    --focus-ring-color: #2563eb; /* Blue focus ring */
-    --button-hover-bg-color: #ffcc00; /* Slightly darker yellow button hover */
-    --checkbox-radio-focus-ring-color: #2563eb; /* Blue checkbox/radio focus ring */
-
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    font-size: var(--font-size);
-    font-weight: 400;
-    line-height: var(--line-height);
-    font-family: var(--font-family);
-    color: var(--color);
-    background-color: var(--background-color);
-    -webkit-font-smoothing: var(--font-smoothing);
-    -moz-osx-font-smoothing: grayscale;
+.fapi-order-form html {
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
     tab-size: 4;
     line-height: 1.15;
     -webkit-text-size-adjust: 100%;
 }
 
-.fapi-order-form .fapi-container-header {
-    background-color: var(--container-header-background-color);
-    font-size: var(--container-header-font-size);
-    color: var(--container-header-color);
-    font-family: var(--container-header-font-family);
-    font-weight: 700;
-}
-
-.fapi-order-form form input,
-.fapi-order-form form select,
-.fapi-order-form form textarea {
-    background-color: #fff;
-    border-color: #000;
-    border-width: 1px;
-    padding: 8px 12px;
-    font-size: 1rem;
-    line-height: 1.5rem;
-    font-weight: 600;
-    color: #000;
-    border-radius: 4px;
-}
-
-.fapi-order-form form input:focus,
-.fapi-order-form form select:focus,
-.fapi-order-form form textarea:focus {
-    --tw-ring-color: var(--focus-ring-color); /* Blue focus ring */
-    border-color: var(--focus-ring-color);
-}
-
-.fapi-order-form form button {
-    background-color: var(--submit-button-background-color); /* Yellow button background */
-    color: var(--submit-button-text-color); /* Black text */
-    font-weight: 600;
-    padding: 10px 20px;
-    border-radius: var(--submit-button-border-radius);
-    transition: opacity 0.15s ease-in-out;
-    font-family: var(--submit-button-font-family);
-    font-size: var(--submit-button-font-size);
-    border: none;
-}
-
-.fapi-order-form form button:hover {
-    background-color: var(--button-hover-bg-color); /* Darker yellow on hover */
-    opacity: 0.85;
-}
-
-.fapi-order-form form input[type=checkbox],
-.fapi-order-form form input[type=radio] {
-    height: 16px;
-    width: 16px;
-    color: var(--input-color); /* Blue color */
-    border-radius: 9999px;
-}
-
-.fapi-order-form form input[type=checkbox]:focus,
-.fapi-order-form form input[type=radio]:focus {
-    --tw-ring-color: var(--checkbox-radio-focus-ring-color); /* Blue checkbox/radio focus ring */
-}
-
-.fapi-order-form .fapi-form-discounted-price {
-    color: var(--sale-color); /* Sale red color */
-    font-weight: 700;
-}
-
-.fapi-order-form .order-bump {
-    background-color: var(--order-bump-container-header-background-color); /* Yellow order bump */
-    font-size: var(--order-bump-container-header-font-size);
-    color: var(--order-bump-container-header-color); /* Black text */
-    font-weight: 700;
-}
-
-.fapi-order-form .order-bump-content {
-    border-right: var(--order-bump-border-style);
-    border-bottom: var(--order-bump-border-style);
-    border-left: var(--order-bump-border-style);
-    margin-bottom: 1em;
-    background-color: var(--order-bump-container-content-background-color);
-    padding: var(--order-bump-space-padding);
-}
-
-.fapi-order-form .order-bump-label {
-    background-color: var(--order-bump-container-content-item-background-color);
-}
-
-.fapi-order-form .order-bump-label .order-bump-arrow {
-    display: var(--order-bump-item-arrow-display);
-    color: var(--order-bump-item-arrow-color); /* Yellow arrow color */
-}
-
-.fapi-order-form .order-bump-space {
-    margin: var(--order-bump-space-margin);
-}
-
-.fapi-order-form .fapi-submit-button {
-    padding: 12px 24px;
-    font-size: var(--submit-button-font-size);
-    color: var(--submit-button-text-color); /* Black text */
-    background-color: var(--submit-button-background-color); /* Yellow button background */
-    border-radius: var(--submit-button-border-radius);
-    font-family: var(--submit-button-font-family);
-    line-height: 1em;
-    transition: opacity 0.15s ease-in-out;
-}
-
-.fapi-order-form .fapi-submit-button:hover {
-    opacity: 0.8;
-}
-
-.fapi-order-form .fapi-submit-button:focus {
-    outline: 2px solid transparent;
-    outline-offset: 2px;
-}
-
-.fapi-order-form .fapi-sending {
-    color: var(--submit-button-background-color); /* Yellow text */
-    font-family: var(--submit-button-font-family);
-}
-
-.fapi-order-form .fapi-form-checkbox:checked {
-    background-color: var(--input-color); /* Blue checkbox color */
-}
-
-.fapi-order-form .fapi-form-checkbox {
-    background-color: var(--checkbox-color-default); /* White checkbox background */
-}
-
-.fapi-order-form .fapi-form-radio:checked {
-    background-color: var(--input-color); /* Blue radio color */
-}
-
-.fapi-order-form form label {
-    font-weight: 600;
-    color: var(--color); /* Black text */
-    font-family: var(--font-family);
-}
-
-.fapi-order-form form p {
-    font-size: var(--font-size);
-    font-weight: 400;
-    line-height: var(--line-height);
-    font-family: var(--font-family);
-    color: var(--color); /* Black text */
-}
-
-.fapi-order-form form ol,
-.fapi-order-form form ul {
+.fapi-order-form body {
     margin: 0;
-    list-style-type: none;
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+}
+
+.fapi-order-form hr {
+    height: 0;
+    color: inherit;
+}
+
+.fapi-order-form abbr[title] {
+    -webkit-text-decoration: underline dotted;
+    text-decoration: underline dotted;
+}
+
+.fapi-order-form b, .fapi-order-form strong {
+    font-weight: bolder;
+}
+
+.fapi-order-form code, .fapi-order-form kbd, .fapi-order-form pre, .fapi-order-form samp {
+    font-family: ui-monospace, SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
+    font-size: 1em;
+}
+
+.fapi-order-form small {
+    font-size: 80%;
+}
+
+.fapi-order-form sub, .fapi-order-form sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+.fapi-order-form sub {
+    bottom: -.25em;
+}
+
+.fapi-order-form sup {
+    top: -.5em;
+}
+
+.fapi-order-form table {
+    text-indent: 0;
+    border-color: inherit;
+}
+
+.fapi-order-form button, .fapi-order-form input, .fapi-order-form optgroup, .fapi-order-form select, .fapi-order-form textarea {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+}
+
+.fapi-order-form button, .fapi-order-form select {
+    text-transform: none;
+}
+
+.fapi-order-form [type=button], .fapi-order-form [type=reset], .fapi-order-form [type=submit], .fapi-order-form button {
+    -webkit-appearance: button;
+}
+
+.fapi-order-form ::-moz-focus-inner {
+    border-style: none;
     padding: 0;
 }
 
-/* Custom Utility Classes */
-.f-max-w-2\/5 {
-    max-width: 40%;
+.fapi-order-form :-moz-focusring {
+    outline: 1px dotted ButtonText;
 }
 
-.f-max-w-3\/5 {
-    max-width: 60%;
+.fapi-order-form :-moz-ui-invalid {
+    box-shadow: none;
 }
 
-.f-rounded {
-    border-radius: .25rem;
+.fapi-order-form legend {
+    padding: 0;
 }
 
-.f-rounded-full {
-    border-radius: 9999px;
+.fapi-order-form progress {
+    vertical-align: baseline;
 }
 
-/* Add more customizations as necessary */
+.fapi-order-form ::-webkit-inner-spin-button, .fapi-order-form ::-webkit-outer-spin-button {
+    height: auto;
+}
+
+.fapi-order-form [type=search] {
+    -webkit-appearance: textfield;
+    outline-offset: -2px;
+}
+
+.fapi-order-form ::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+.fapi-order-form ::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    font: inherit;
+}
+
+.fapi-order-form summary {
+    display: list-item;
+}
+
+.fapi-order-form blockquote, .fapi-order-form dd, .fapi-order-form dl, .fapi-order-form figure, .fapi-order-form h1, .fapi-order-form h2, .fapi-order-form h3, .fapi-order-form h4, .fapi-order-form h5, .fapi-order-form h6, .fapi-order-form hr, .fapi-order-form p, .fapi-order-form pre {
+    margin: 0;
+}
+
+.fapi-order-form button {
+    background-color: transparent;
+    background-image: none;
+}
+
+.fapi-order-form fieldset {
+    margin: 0;
+    padding: 0;
+}
+
+.fapi-order-form ol, .fapi-order-form ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.fapi-order-form html {
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    line-height: 1.5;
+}
+
+.fapi-order-form body {
+    font-family: inherit;
+    line-height: inherit;
+}
+
+.fapi-order-form *, .fapi-order-form :after, .fapi-order-form :before {
+    box-sizing: border-box;
+    border-width: 0;
+    border-style: solid;
+    border-color: currentColor;
+}
+
+.fapi-order-form hr {
+    border-top-width: 1px;
+}
+
+.fapi-order-form img {
+    border-style: solid;
+}
+
+.fapi-order-form textarea {
+    resize: vertical;
+}
+
+.fapi-order-form input::-moz-placeholder, .fapi-order-form textarea::-moz-placeholder {
+    opacity: 1;
+    color: #9ca3af;
+}
+
+.fapi-order-form input:-ms-input-placeholder, .fapi-order-form textarea:-ms-input-placeholder {
+    opacity: 1;
+    color: #9ca3af;
+}
+
+.fapi-order-form input::placeholder, .fapi-order-form textarea::placeholder {
+    opacity: 1;
+    color: #9ca3af;
+}
+
+.fapi-order-form [role=button], .fapi-order-form button {
+    cursor: pointer;
+}
+
+.fapi-order-form :-moz-focusring {
+    outline: auto;
+}
+
+.fapi-order-form table {
+    border-collapse: collapse;
+}
+
+.fapi-order-form h1, .fapi-order-form h2, .fapi-order-form h3, .fapi-order-form h4, .fapi-order-form h5, .fapi-order-form h6 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+.fapi-order-form a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.fapi-order-form button, .fapi-order-form input, .fapi-order-form optgroup, .fapi-order-form select, .fapi-order-form textarea {
+    padding: 0;
+    line-height: inherit;
+    color: inherit;
+}
+
+.fapi-order-form code, .fapi-order-form kbd, .fapi-order-form pre, .fapi-order-form samp {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
+}
+
+.fapi-order-form audio, .fapi-order-form canvas, .fapi-order-form embed, .fapi-order-form iframe, .fapi-order-form img, .fapi-order-form object, .fapi-order-form svg, .fapi-order-form video {
+    display: block;
+    vertical-align: middle;
+}
+
+.fapi-order-form img, .fapi-order-form video {
+    max-width: 100%;
+    height: auto;
+}
+
+.fapi-order-form [hidden] {
+    display: none;
+}
+
+*, .fapi-order-form *, .fapi-order-form :after, .fapi-order-form :before, :after, :before {
+    --tw-border-opacity: 1;
+    border-color: rgba(229, 231, 235, var(--tw-border-opacity));
+}
