@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
 .fapi-order-form html {
     -moz-tab-size: 4;
     -o-tab-size: 4;
@@ -8,30 +10,38 @@
 
 .fapi-order-form body {
     margin: 0;
-    font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+    font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    color: #000; /* Set text color to Black */
+    background-color: #ffdc00; /* Set background color to #ffdc00 */
 }
 
 .fapi-order-form hr {
     height: 0;
     color: inherit;
+    border-top-width: 1px;
+    border-color: #000; /* Black border color */
 }
 
 .fapi-order-form abbr[title] {
     -webkit-text-decoration: underline dotted;
     text-decoration: underline dotted;
+    color: #000; /* Black text color */
 }
 
 .fapi-order-form b, .fapi-order-form strong {
     font-weight: bolder;
+    color: #000; /* Black text color */
 }
 
 .fapi-order-form code, .fapi-order-form kbd, .fapi-order-form pre, .fapi-order-form samp {
-    font-family: ui-monospace, SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
+    font-family: 'Inter', SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
     font-size: 1em;
+    color: #000; /* Black text color */
 }
 
 .fapi-order-form small {
     font-size: 80%;
+    color: #000; /* Black text color */
 }
 
 .fapi-order-form sub, .fapi-order-form sup {
@@ -39,6 +49,7 @@
     line-height: 0;
     position: relative;
     vertical-align: baseline;
+    color: #000; /* Black text color */
 }
 
 .fapi-order-form sub {
@@ -51,7 +62,8 @@
 
 .fapi-order-form table {
     text-indent: 0;
-    border-color: inherit;
+    border-color: #000; /* Black border color */
+    color: #000; /* Black text color */
 }
 
 .fapi-order-form button, .fapi-order-form input, .fapi-order-form optgroup, .fapi-order-form select, .fapi-order-form textarea {
@@ -59,14 +71,20 @@
     font-size: 100%;
     line-height: 1.15;
     margin: 0;
+    color: #000; /* Black text color */
+    background-color: #ffdc00; /* Background color #ffdc00 */
 }
 
 .fapi-order-form button, .fapi-order-form select {
     text-transform: none;
+    color: #000; /* Black text color */
+    background-color: #ffdc00; /* Background color #ffdc00 */
 }
 
 .fapi-order-form [type=button], .fapi-order-form [type=reset], .fapi-order-form [type=submit], .fapi-order-form button {
     -webkit-appearance: button;
+    color: #000; /* Black text color */
+    background-color: #ffdc00; /* Background color #ffdc00 */
 }
 
 .fapi-order-form ::-moz-focus-inner {
@@ -84,10 +102,12 @@
 
 .fapi-order-form legend {
     padding: 0;
+    color: #000; /* Black text color */
 }
 
 .fapi-order-form progress {
     vertical-align: baseline;
+    color: #000; /* Black text color */
 }
 
 .fapi-order-form ::-webkit-inner-spin-button, .fapi-order-form ::-webkit-outer-spin-button {
@@ -97,6 +117,8 @@
 .fapi-order-form [type=search] {
     -webkit-appearance: textfield;
     outline-offset: -2px;
+    color: #000; /* Black text color */
+    background-color: #ffdc00; /* Background color #ffdc00 */
 }
 
 .fapi-order-form ::-webkit-search-decoration {
@@ -106,59 +128,69 @@
 .fapi-order-form ::-webkit-file-upload-button {
     -webkit-appearance: button;
     font: inherit;
+    color: #000; /* Black text color */
+    background-color: #ffdc00; /* Background color #ffdc00 */
 }
 
 .fapi-order-form summary {
     display: list-item;
+    color: #000; /* Black text color */
 }
 
 .fapi-order-form blockquote, .fapi-order-form dd, .fapi-order-form dl, .fapi-order-form figure, .fapi-order-form h1, .fapi-order-form h2, .fapi-order-form h3, .fapi-order-form h4, .fapi-order-form h5, .fapi-order-form h6, .fapi-order-form hr, .fapi-order-form p, .fapi-order-form pre {
     margin: 0;
+    color: #000; /* Black text color */
 }
 
 .fapi-order-form button {
     background-color: transparent;
     background-image: none;
+    color: #000; /* Black text color */
 }
 
 .fapi-order-form fieldset {
     margin: 0;
     padding: 0;
+    color: #000; /* Black text color */
 }
 
 .fapi-order-form ol, .fapi-order-form ul {
     list-style: none;
     margin: 0;
     padding: 0;
+    color: #000; /* Black text color */
 }
 
 .fapi-order-form html {
-    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     line-height: 1.5;
+    color: #000; /* Black text color */
+    background-color: #ffdc00; /* Background color #ffdc00 */
 }
 
 .fapi-order-form body {
     font-family: inherit;
     line-height: inherit;
+    color: #000; /* Black text color */
+    background-color: #ffdc00; /* Background color #ffdc00 */
 }
 
 .fapi-order-form *, .fapi-order-form :after, .fapi-order-form :before {
     box-sizing: border-box;
     border-width: 0;
     border-style: solid;
-    border-color: currentColor;
-}
-
-.fapi-order-form hr {
-    border-top-width: 1px;
+    border-color: transparent;
 }
 
 .fapi-order-form img {
     border-style: solid;
+    color: #000; /* Black text color */
 }
 
 .fapi-order-form textarea {
     resize: vertical;
+    color: #000; /* Black text color */
+    background-color: #ffdc00; /* Background color #ffdc00 */
 }
 
 .fapi-order-form input::-moz-placeholder, .fapi-order-form textarea::-moz-placeholder {
@@ -178,6 +210,8 @@
 
 .fapi-order-form [role=button], .fapi-order-form button {
     cursor: pointer;
+    color: #000; /* Black text color */
+    background-color: #ffdc00; /* Background color #ffdc00 */
 }
 
 .fapi-order-form :-moz-focusring {
@@ -186,11 +220,13 @@
 
 .fapi-order-form table {
     border-collapse: collapse;
+    border-color: #000; /* Black border color */
 }
 
 .fapi-order-form h1, .fapi-order-form h2, .fapi-order-form h3, .fapi-order-form h4, .fapi-order-form h5, .fapi-order-form h6 {
     font-size: inherit;
     font-weight: inherit;
+    color: #000; /* Black text color */
 }
 
 .fapi-order-form a {
@@ -201,21 +237,25 @@
 .fapi-order-form button, .fapi-order-form input, .fapi-order-form optgroup, .fapi-order-form select, .fapi-order-form textarea {
     padding: 0;
     line-height: inherit;
-    color: inherit;
+    color: #000; /* Black text color */
+    background-color: #ffdc00; /* Background color #ffdc00 */
 }
 
 .fapi-order-form code, .fapi-order-form kbd, .fapi-order-form pre, .fapi-order-form samp {
-    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
+    font-family: 'Inter', SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
+    color: #000; /* Black text color */
 }
 
 .fapi-order-form audio, .fapi-order-form canvas, .fapi-order-form embed, .fapi-order-form iframe, .fapi-order-form img, .fapi-order-form object, .fapi-order-form svg, .fapi-order-form video {
     display: block;
     vertical-align: middle;
+    color: #000; /* Black text color */
 }
 
 .fapi-order-form img, .fapi-order-form video {
     max-width: 100%;
     height: auto;
+    color: #000; /* Black text color */
 }
 
 .fapi-order-form [hidden] {
