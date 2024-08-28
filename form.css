@@ -3,38 +3,38 @@
 .fapi-order-form {
     --background-color: #fff;
     --font-size: 16px;
-    --color: #555;
+    --color: #000; /* Ensure black text */
     --font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    --container-header-background-color: #f0f0f0;
+    --container-header-background-color: #ffdc00; /* Yellow header background */
     --container-header-font-size: 18px;
-    --container-header-color: #555;
+    --container-header-color: #000; /* Ensure black text */
     --container-header-font-family: inherit;
     --submit-button-font-size: 20px;
     --submit-button-border-radius: 20px;
-    --submit-button-text-color: #000;
-    --submit-button-background-color: #fcbe00;
+    --submit-button-text-color: #000; /* Ensure black text */
+    --submit-button-background-color: #ffdc00; /* Yellow button background */
     --submit-button-font-family: inherit;
     --input-color: #2563eb; /* Editable blue color */
     --input-color-disabled: #e5e7eb;
-    --sale-color: #ff1901;
-    --checkbox-color-default: #fff;
-    --order-bump-container-header-background-color: red;
+    --sale-color: #ff1901; /* Sale red color */
+    --checkbox-color-default: #fff; /* White checkbox background */
+    --order-bump-container-header-background-color: #ffdc00; /* Yellow order bump background */
     --order-bump-container-header-font-size: 16px;
-    --order-bump-container-header-color: #fff;
+    --order-bump-container-header-color: #000; /* Ensure black text */
     --order-bump-container-content-background-color: transparent;
     --order-bump-container-content-item-background-color: transparent;
     --order-bump-container-border-width: 3px;
     --order-bump-container-border-style: dashed;
     --order-bump-border-style: var(--order-bump-container-border-width) var(--order-bump-container-border-style) var(--order-bump-container-header-background-color) !important;
     --order-bump-item-arrow-display: inherit;
-    --order-bump-item-arrow-color: red;
+    --order-bump-item-arrow-color: #ffdc00; /* Yellow arrow color */
     --order-bump-space-margin: 10px 0 10px;
     --order-bump-space-padding: 14px 24px;
     --font-smoothing: antialiased;
     --line-height: 1.5em;
-    --focus-ring-color: #2563eb; /* Editable focus ring color */
-    --button-hover-bg-color: #1e40af; /* Editable button hover blue */
-    --checkbox-radio-focus-ring-color: #2563eb; /* Editable checkbox/radio focus ring blue */
+    --focus-ring-color: #2563eb; /* Blue focus ring */
+    --button-hover-bg-color: #ffcc00; /* Slightly darker yellow button hover */
+    --checkbox-radio-focus-ring-color: #2563eb; /* Blue checkbox/radio focus ring */
 
     margin-left: auto;
     margin-right: auto;
@@ -50,6 +50,14 @@
     tab-size: 4;
     line-height: 1.15;
     -webkit-text-size-adjust: 100%;
+}
+
+.fapi-order-form .fapi-container-header {
+    background-color: var(--container-header-background-color);
+    font-size: var(--container-header-font-size);
+    color: var(--container-header-color);
+    font-family: var(--container-header-font-family);
+    font-weight: 700;
 }
 
 .fapi-order-form form input,
@@ -69,13 +77,13 @@
 .fapi-order-form form input:focus,
 .fapi-order-form form select:focus,
 .fapi-order-form form textarea:focus {
-    --tw-ring-color: var(--focus-ring-color); /* Use the editable focus ring color */
+    --tw-ring-color: var(--focus-ring-color); /* Blue focus ring */
     border-color: var(--focus-ring-color);
 }
 
 .fapi-order-form form button {
-    background-color: var(--submit-button-background-color);
-    color: var(--submit-button-text-color);
+    background-color: var(--submit-button-background-color); /* Yellow button background */
+    color: var(--submit-button-text-color); /* Black text */
     font-weight: 600;
     padding: 10px 20px;
     border-radius: var(--submit-button-border-radius);
@@ -86,7 +94,7 @@
 }
 
 .fapi-order-form form button:hover {
-    background-color: var(--button-hover-bg-color); /* Use the editable button hover blue */
+    background-color: var(--button-hover-bg-color); /* Darker yellow on hover */
     opacity: 0.85;
 }
 
@@ -94,24 +102,24 @@
 .fapi-order-form form input[type=radio] {
     height: 16px;
     width: 16px;
-    color: var(--input-color); /* Use the editable blue color */
+    color: var(--input-color); /* Blue color */
     border-radius: 9999px;
 }
 
 .fapi-order-form form input[type=checkbox]:focus,
 .fapi-order-form form input[type=radio]:focus {
-    --tw-ring-color: var(--checkbox-radio-focus-ring-color); /* Use the editable checkbox/radio focus ring blue */
+    --tw-ring-color: var(--checkbox-radio-focus-ring-color); /* Blue checkbox/radio focus ring */
 }
 
 .fapi-order-form .fapi-form-discounted-price {
-    color: var(--sale-color);
+    color: var(--sale-color); /* Sale red color */
     font-weight: 700;
 }
 
 .fapi-order-form .order-bump {
-    background-color: var(--order-bump-container-header-background-color);
+    background-color: var(--order-bump-container-header-background-color); /* Yellow order bump */
     font-size: var(--order-bump-container-header-font-size);
-    color: var(--order-bump-container-header-color);
+    color: var(--order-bump-container-header-color); /* Black text */
     font-weight: 700;
 }
 
@@ -130,7 +138,7 @@
 
 .fapi-order-form .order-bump-label .order-bump-arrow {
     display: var(--order-bump-item-arrow-display);
-    color: var(--order-bump-item-arrow-color);
+    color: var(--order-bump-item-arrow-color); /* Yellow arrow color */
 }
 
 .fapi-order-form .order-bump-space {
@@ -140,8 +148,8 @@
 .fapi-order-form .fapi-submit-button {
     padding: 12px 24px;
     font-size: var(--submit-button-font-size);
-    color: var(--submit-button-text-color);
-    background-color: var(--submit-button-background-color);
+    color: var(--submit-button-text-color); /* Black text */
+    background-color: var(--submit-button-background-color); /* Yellow button background */
     border-radius: var(--submit-button-border-radius);
     font-family: var(--submit-button-font-family);
     line-height: 1em;
@@ -158,25 +166,25 @@
 }
 
 .fapi-order-form .fapi-sending {
-    color: var(--submit-button-background-color);
+    color: var(--submit-button-background-color); /* Yellow text */
     font-family: var(--submit-button-font-family);
 }
 
 .fapi-order-form .fapi-form-checkbox:checked {
-    background-color: var(--input-color);
+    background-color: var(--input-color); /* Blue checkbox color */
 }
 
 .fapi-order-form .fapi-form-checkbox {
-    background-color: var(--checkbox-color-default);
+    background-color: var(--checkbox-color-default); /* White checkbox background */
 }
 
 .fapi-order-form .fapi-form-radio:checked {
-    background-color: var(--input-color);
+    background-color: var(--input-color); /* Blue radio color */
 }
 
 .fapi-order-form form label {
     font-weight: 600;
-    color: var(--color);
+    color: var(--color); /* Black text */
     font-family: var(--font-family);
 }
 
@@ -185,7 +193,7 @@
     font-weight: 400;
     line-height: var(--line-height);
     font-family: var(--font-family);
-    color: var(--color);
+    color: var(--color); /* Black text */
 }
 
 .fapi-order-form form ol,
