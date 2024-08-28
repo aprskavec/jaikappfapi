@@ -42,8 +42,8 @@
     padding: 20px; /* Adjusted padding for compactness */
 }
 
-.fapi-order-form *, .fapi-order-form :after, .fapi-order-form :before {
-    border: none !important;
+.fapi-order-form *:not(:before):not(:after) {
+    border: none;
 }
 
 .fapi-order-form .fapi-container-header {
