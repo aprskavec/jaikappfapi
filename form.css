@@ -1,26 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
 .fapi-order-form {
-    --background-color: #fff;
+    --background-color: #000; /* Background color changed to black */
     --font-size: 16px;
-    --color: #000;
+    --color: #ffdc00; /* Text color changed to #ffdc00 */
     --font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    --container-header-background-color: #ffdc00;
+    --container-header-background-color: #000; /* Container header background changed to black */
     --container-header-font-size: 18px;
-    --container-header-color: #000;
+    --container-header-color: #ffdc00; /* Container header text color changed to #ffdc00 */
     --container-header-font-family: inherit;
     --submit-button-font-size: 20px;
     --submit-button-border-radius: 20px;
     --submit-button-text-color: #000;
-    --submit-button-background-color: #ffdc00;
+    --submit-button-background-color: #ffdc00; /* Button color remains unchanged */
     --submit-button-font-family: inherit;
     --input-color: #000;
     --input-color-disabled: #e5e7eb;
     --sale-color: #ff1901;
     --checkbox-color-default: #fff;
-    --order-bump-container-header-background-color: #ffdc00;
+    --order-bump-container-header-background-color: #000; /* Order bump header background changed to black */
     --order-bump-container-header-font-size: 16px;
-    --order-bump-container-header-color: #000;
+    --order-bump-container-header-color: #ffdc00; /* Order bump header text color changed to #ffdc00 */
     --order-bump-container-content-background-color: transparent;
     --order-bump-container-content-item-background-color: transparent;
     --order-bump-container-border-width: 3px;
@@ -82,7 +82,7 @@
 
 .fapi-order-form form label {
     font-weight: 600;
-    color: #000;
+    color: #ffdc00; /* Label color changed to #ffdc00 */
     font-family: var(--font-family);
 }
 
