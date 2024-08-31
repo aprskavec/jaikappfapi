@@ -33,7 +33,7 @@
     --font-smoothing: antialiased;
     --line-height: 1.5em;
     --focus-ring-color: #2563eb; /* Blue focus ring */
-    --button-hover-bg-color: #ffcc00; /* Slightly darker yellow button hover */
+    --button-hover-bg-color: #3f3f3f; /* Slightly greyer button hover */
     --checkbox-radio-focus-ring-color: #2563eb; /* Blue checkbox/radio focus ring */
 
     margin-left: auto;
