@@ -220,4 +220,9 @@
     border-radius: 9999px;
 }
 
+.f-bg-blue-500 {
+    --tw-bg-opacity: 1 !important;
+    background-color: black !important;
+}
+
 /* Add more customizations as necessary */
