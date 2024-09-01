@@ -148,8 +148,8 @@
 .fapi-order-form .fapi-submit-button {
     padding: 12px 24px;
     font-size: var(--submit-button-font-size);
-    color: var(--submit-button-background-color); /* Yellow button color */
-    background-color: var(--submit-button-text-color); /* Black button background */ 
+    color: black;
+    background-color: #55E655; /* Green button background */ 
     border-radius: var(--submit-button-border-radius);
     font-family: var(--submit-button-font-family);
     line-height: 1em;
