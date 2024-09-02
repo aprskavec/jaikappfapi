@@ -226,7 +226,7 @@
 }
 
 .f-min-w-max {
-    display: none;
+    display: none !important;
 }
 
 
