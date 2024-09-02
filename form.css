@@ -225,12 +225,6 @@
     background-color: black !important;
 }
 
-.fapi-order-form *, 
-.fapi-order-form *:after, 
-.fapi-order-form *:before {
-    border-color: black !important;
-}
-
 .fapi-order-form .f-mt-4.f-text-center.f-text-xs.f-text-gray-400 {
     display: none !important;
 }
