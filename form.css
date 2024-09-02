@@ -225,8 +225,12 @@
     background-color: black !important;
 }
 
-.*, .fapi-order-form *, .fapi-order-form :after, .fapi-order-form :before, :after, :before {
-    border-color: black;
+.fapi-order-form *, 
+.fapi-order-form *:after, 
+.fapi-order-form *:before {
+    border-color: black !important;
+}
+
 }
 
 /* Add more customizations as necessary */
